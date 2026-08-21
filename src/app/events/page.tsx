@@ -8,39 +8,67 @@ import { Card } from '@/components/ui/card';
 
 const allEvents = [
   {
-    title: 'Upcoming Event',
-    description: 'Details for the next event will be announced soon. Stay tuned!',
-    date: 'Upcoming',
-    time: 'Upcoming',
-    image: 'https://placehold.co/600x400.png',
-    hint: 'coming soon',
-    status: 'Upcoming',
-  },
-  {
-    title: 'ALCODE',
-    description: 'A competitive coding contest to challenge your algorithmic skills.',
-    date: 'August 21, 2024',
+    title: 'THINQNIQUE',
+    description: 'Join us for the ultimate Thinqnique event. Registration is now open!',
+    date: 'August 25, 2026',
     time: '10:00 AM onwards',
-    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404485/POSTER_yk38m1.avif',
-    hint: 'algorithm code',
+    image: '/posters/THINQNIQUE_B.2026jpg.jpeg',
+    hint: 'thinqnique upcoming',
+    status: 'Upcoming',
+    link: 'https://think-unique.vercel.app/',
+  },
+  {
+    title: 'PROMPTX',
+    description: 'Master the art of prompting in this AI-focused PromptX competition.',
+    date: 'March 27, 2026',
+    time: '12:40 PM onwards',
+    image: '/posters/PROMPTX_B.jpg',
+    hint: 'promptx',
     status: 'Past',
   },
   {
-    title: 'HACKATHON: INNOVEXON',
-    description: 'A 24-hour hackathon to build innovative solutions and win exciting prizes.',
-    date: 'September 04, 2024',
-    time: 'All Day',
-    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404547/innovexon_poster_beehro.avif',
-    hint: 'hackathon innovation',
+    title: 'GARTIC',
+    description: 'Showcase your creativity and guessing skills in this fun-filled Gartic event.',
+    date: 'March 11, 2026',
+    time: '12:40 PM onwards',
+    image: '/posters/GARTIC_B.jpg',
+    hint: 'gartic',
     status: 'Past',
   },
   {
-    title: 'CODE UNRAVEL',
-    description: 'Unravel complex coding problems and showcase your debugging prowess.',
-    date: 'March 06, 2025',
-    time: '1:00 PM - 3:00 PM',
-    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404519/POSTER_hx3dgu.avif',
-    hint: 'code puzzle',
+    title: 'SCRIBBLE',
+    description: 'A creative event where you draw and guess in an exciting game of Scribble.',
+    date: 'March 09, 2026',
+    time: '12:40 PM onwards',
+    image: '/posters/SCRIBBLE_B.jpg',
+    hint: 'scribble',
+    status: 'Past',
+  },
+  {
+    title: 'GLITCHFIX',
+    description: 'Put your debugging skills to the test and fix the glitches in this challenging event.',
+    date: 'January 24, 2026',
+    time: '12:40 PM onwards',
+    image: '/posters/GLITCHFIX_B.jpg',
+    hint: 'glitchfix',
+    status: 'Past',
+  },
+  {
+    title: 'THINQNIQUE',
+    description: 'Test your critical thinking and unique problem-solving abilities in Thinqnique.',
+    date: 'September 16, 2025',
+    time: '10:00 AM onwards',
+    image: '/posters/THINQNIQUE_B.jpg',
+    hint: 'thinqnique',
+    status: 'Past',
+  },
+  {
+    title: 'POSTER - ON',
+    description: 'A poster presentation competition to visualize and present your technical ideas.',
+    date: 'April 23, 2025',
+    time: '11:00 AM - 1:00 PM',
+    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404461/POSTER_viwzgl.avif',
+    hint: 'poster presentation',
     status: 'Past',
   },
   {
@@ -53,12 +81,30 @@ const allEvents = [
     status: 'Past',
   },
   {
-    title: 'POSTER - ON',
-    description: 'A poster presentation competition to visualize and present your technical ideas.',
-    date: 'April 23, 2025',
-    time: '11:00 AM - 1:00 PM',
-    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404461/POSTER_viwzgl.avif',
-    hint: 'poster presentation',
+    title: 'CODE UNRAVEL',
+    description: 'Unravel complex coding problems and showcase your debugging prowess.',
+    date: 'March 06, 2025',
+    time: '1:00 PM - 3:00 PM',
+    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404519/POSTER_hx3dgu.avif',
+    hint: 'code puzzle',
+    status: 'Past',
+  },
+  {
+    title: 'HACKATHON: INNOVEXON',
+    description: 'A 24-hour hackathon to build innovative solutions and win exciting prizes.',
+    date: 'September 04, 2024',
+    time: 'All Day',
+    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404547/innovexon_poster_beehro.avif',
+    hint: 'hackathon innovation',
+    status: 'Past',
+  },
+  {
+    title: 'ALCODE',
+    description: 'A competitive coding contest to challenge your algorithmic skills.',
+    date: 'August 21, 2024',
+    time: '10:00 AM onwards',
+    image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404485/POSTER_yk38m1.avif',
+    hint: 'algorithm code',
     status: 'Past',
   },
 ];
@@ -99,7 +145,13 @@ const EventCard = ({ event }: { event: (typeof allEvents)[0] }) => (
                     </div>
                 </div>
                 {event.status === 'Upcoming' && (
-                <Button className="mt-6 w-full md:w-auto self-start">Register Now</Button>
+                  'link' in event && event.link ? (
+                    <Button asChild className="mt-6 w-full md:w-auto self-start">
+                      <a href={event.link as string} target="_blank" rel="noopener noreferrer">Register Now</a>
+                    </Button>
+                  ) : (
+                    <Button className="mt-6 w-full md:w-auto self-start">Register Now</Button>
+                  )
                 )}
             </div>
         </div>

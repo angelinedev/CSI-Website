@@ -18,24 +18,39 @@ import React from 'react';
 
 const pastEvents = [
   {
-    title: 'ALCODE',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404618/2_nyc6vo.avif',
-    hint: 'algorithm code',
+    title: 'PROMPTX',
+    img: '/posters/PROMPTX.jpg',
+    hint: 'Promptx event',
   },
   {
-    title: 'ALCODE',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404617/1_ojyxae.avif',
-    hint: 'algorithm code',
+    title: 'GARTIC',
+    img: '/posters/GARTIC.jpg',
+    hint: 'Gartic event',
   },
   {
-    title: 'HACKATHON: INNOVEXON',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404683/Picture1_uolfy0.avif',
-    hint: 'hackathon innovation',
+    title: 'SCRIBBLE',
+    img: '/posters/SCRIBBLE.jpg',
+    hint: 'Scribble event',
   },
-    {
-    title: 'HACKATHON: INNOVEXON',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404682/Picture2_lrdi1k.avif',
-    hint: 'hackathon innovation',
+  {
+    title: 'GLITCHFIX',
+    img: '/posters/GLITCHFIX.jpg',
+    hint: 'Glitchfix event',
+  },
+  {
+    title: 'THINQNIQUE',
+    img: '/posters/THINQNIQUE.jpg',
+    hint: 'Thinqnique event',
+  },
+  {
+    title: 'WORKSHOP: NETWORKING AND COMMUNICATION',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404709/Picture2_cxovol.avif',
+    hint: 'network workshop',
+  },
+  {
+    title: 'WORKSHOP: NETWORKING AND COMMUNICATION',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404707/Picture1_czskry.avif',
+    hint: 'network workshop',
   },
   {
     title: 'CODE UNRAVEL',
@@ -48,15 +63,25 @@ const pastEvents = [
     hint: 'code puzzle',
   },
   {
-    title: 'WORKSHOP: NETWORKING AND COMMUNICATION',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404709/Picture2_cxovol.avif',
-    hint: 'network workshop',
+    title: 'HACKATHON: INNOVEXON',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404683/Picture1_uolfy0.avif',
+    hint: 'hackathon innovation',
   },
   {
-    title: 'WORKSHOP: NETWORKING AND COMMUNICATION',
-    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404707/Picture1_czskry.avif',
-    hint: 'network workshop',
+    title: 'HACKATHON: INNOVEXON',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404682/Picture2_lrdi1k.avif',
+    hint: 'hackathon innovation',
   },
+  {
+    title: 'ALCODE',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404618/2_nyc6vo.avif',
+    hint: 'algorithm code',
+  },
+  {
+    title: 'ALCODE',
+    img: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756404617/1_ojyxae.avif',
+    hint: 'algorithm code',
+  }
 ];
 
 const inaugurationImages = [

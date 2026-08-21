@@ -5,19 +5,34 @@ import RollingGallery from '@/components/shared/rolling-gallery';
 
 const pastEvents = [
   {
-    title: 'ALCODE',
-    img: 'https://placehold.co/600/400.png',
-    hint: 'algorithm code',
+    title: 'PROMPTX',
+    img: '/posters/PROMPTX.jpg',
+    hint: 'promptx',
   },
   {
-    title: 'HACKATHON: INNOVEXON',
-    img: 'https://placehold.co/600/400.png',
-    hint: 'hackathon innovation',
+    title: 'GARTIC',
+    img: '/posters/GARTIC.jpg',
+    hint: 'gartic',
   },
   {
-    title: 'CODE UNRAVEL',
+    title: 'SCRIBBLE',
+    img: '/posters/SCRIBBLE.jpg',
+    hint: 'scribble',
+  },
+  {
+    title: 'GLITCHFIX',
+    img: '/posters/GLITCHFIX.jpg',
+    hint: 'glitchfix',
+  },
+  {
+    title: 'THINQNIQUE',
+    img: '/posters/THINQNIQUE.jpg',
+    hint: 'thinqnique',
+  },
+  {
+    title: 'POSTER - ON',
     img: 'https://placehold.co/600/400.png',
-    hint: 'code puzzle',
+    hint: 'poster presentation',
   },
   {
     title: 'WORKSHOP: NETWORKING AND COMMUNICATION',
@@ -25,10 +40,20 @@ const pastEvents = [
     hint: 'network workshop',
   },
   {
-    title: 'POSTER - ON',
+    title: 'CODE UNRAVEL',
     img: 'https://placehold.co/600/400.png',
-    hint: 'poster presentation',
+    hint: 'code puzzle',
   },
+  {
+    title: 'HACKATHON: INNOVEXON',
+    img: 'https://placehold.co/600/400.png',
+    hint: 'hackathon innovation',
+  },
+  {
+    title: 'ALCODE',
+    img: 'https://placehold.co/600/400.png',
+    hint: 'algorithm code',
+  }
 ];
 
 export default function Home() {

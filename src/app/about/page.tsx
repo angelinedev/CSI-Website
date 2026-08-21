@@ -10,23 +10,23 @@ import { Rocket, Users, Zap } from 'lucide-react';
 
 const officeBearersData = [
   { name: 'Mrs. Vanitha Sheba M', role: 'SBC-CSI', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494084/Mrs._Vanitha_Sheba_M_dueits.avif' },
-  { name: 'Mahendra Udayakumar', role: 'President', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756664807/Mahendra_m8tczw.avif' },
-  { name: 'Megha Shree G', role: 'Vice President', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494082/IMG_20250216_213647_995_h8v617.avif' },
-  { name: 'Syed Tamim Mehdi', role: 'Secretary', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494081/Tamim_nqqpve.avif' },
-  { name: 'Aliah Ridha A', role: 'Joint Secretary', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494082/Aliah_Ridha_A_svd1fl.avif' },
-  { name: 'Deepika R', role: 'Treasurer', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494082/Deepika_R_wsorco.avif' },
-  { name: 'Rajadurga R', role: 'Joint Treasurer', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494083/IMG-20240816-WA0040_2_hp8ftj.avif' },
-  { name: 'Manikandan Askar K', role: 'Executive Member', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494081/askar1_jqucud.avif' },
-  { name: 'Angeline Hepzibah J', role: 'Executive Member', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494081/Angeline_lnff2t.avif' },
-  { name: 'Shruthi D', role: 'Executive Member', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494083/IMG_0620_1_ki4wjb.avif' },
-  { name: 'Sharan S', role: 'Executive Member', image: 'https://res.cloudinary.com/dfi26rd6m/image/upload/v1756494082/SHARAN_S_zr1onr.avif' },
+  { name: 'ANGELINE HEPHZIBAH J', role: 'President -CSI', image: '/members/Angeline_president.jpg' },
+  { name: 'G.DHANALAKSHMI', role: 'Vice - President- CSI', image: '/members/dhanalakshmi Vice President.png' },
+  { name: 'NASIMA R', role: 'Secretary- CSI', image: '/members/Nasima R Secretary.png' },
+  { name: 'DEVASHRI V', role: 'Joint Secretary- CSI', image: '/members/Devashri V Joint secretary.jpg' },
+  { name: 'THANISHCA L', role: 'Treasurer- CSI', image: '/members/Thanishca L Treasurer.jpg' },
+  { name: 'AARTHI N', role: 'Joint Treasurer- CSI', image: '/members/Aarthi N Joint Treasurer.jpg' },
+  { name: 'AAFRIN N', role: 'Executive Member- CSI', image: '/members/Aafrin Executive Member.jpg' },
+  { name: 'LOGAPRIYA D', role: 'Executive Member- CSI', image: '/members/Logapriya D Executive Member.jpg' },
+  { name: 'SOWNDARYA D', role: 'Executive Member- CSI', image: '/members/Sowndarya D Executive Member.png' },
+  { name: 'AASHESH V L', role: 'Executive Member- CSI', image: '/members/AASHESH_V_L Executive Member.png' },
 ];
 
 const chiefPatronsData = [
-    { name: 'Dr.K.Palanikumar', role: 'Chairman' },
-    { name: 'Dr.J.Dafni Rose', role: 'Vice-Chairman' },
-    { name: 'Dr.B.Sreedevi', role: 'Hon.Secretary' },
-    { name: 'Dr.D.Weslin', role: 'Hon.Treasurer' },
+  { name: 'Dr.K.Palanikumar', role: 'Chairman' },
+  { name: 'Dr.J.Dafni Rose', role: 'Vice-Chairman' },
+  { name: 'Dr.B.Sreedevi', role: 'Hon.Secretary' },
+  { name: 'Dr.D.Weslin', role: 'Hon.Treasurer' },
 ];
 
 const missionData = [
@@ -106,13 +106,13 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-center tracking-tight md:text-4xl">
             Chief Patrons of CSI Kancheepuram Chapter
           </h2>
-           <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground md:text-lg">
+          <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground md:text-lg">
             The guiding force behind the CSI Kancheepuram Chapter.
           </p>
         </ScrollReveal>
-        
+
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-           {chiefPatronsData.map((person, index) => (
+          {chiefPatronsData.map((person, index) => (
             <ScrollReveal key={index} delay={100 * (index % 4)}>
               <div className="relative group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
@@ -141,25 +141,25 @@ export default function AboutPage() {
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 justify-items-center">
           {officeBearersData.map((person, index) => (
             <ScrollReveal key={index} delay={100 * (index % 4)}>
-                <div className="relative group">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur-md opacity-60 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                    <TiltedCard
-                      imageSrc={person.image}
-                      altText={person.name}
-                      imageHeight="400px"
-                      imageWidth="300px"
-                      showTooltip={false}
-                      displayOverlayContent={true}
-                      overlayContent={
-                          <div className="absolute bottom-4 left-4 w-auto whitespace-nowrap">
-                            <div className="p-3 bg-black/50 backdrop-blur-md rounded-lg text-left">
-                                <h3 className="text-lg font-bold text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">{person.name}</h3>
-                                <p className="text-sm text-white/80 [text-shadow:0_1px_2px_rgba(0,0,0,0.4)]">{person.role}</p>
-                            </div>
-                          </div>
-                      }
-                  />
-                </div>
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur-md opacity-60 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <TiltedCard
+                  imageSrc={person.image}
+                  altText={person.name}
+                  imageHeight="400px"
+                  imageWidth="300px"
+                  showTooltip={false}
+                  displayOverlayContent={true}
+                  overlayContent={
+                    <div className="absolute bottom-4 left-4 w-auto whitespace-nowrap">
+                      <div className="p-3 bg-black/50 backdrop-blur-md rounded-lg text-left">
+                        <h3 className="text-lg font-bold text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">{person.name}</h3>
+                        <p className="text-sm text-white/80 [text-shadow:0_1px_2px_rgba(0,0,0,0.4)]">{person.role}</p>
+                      </div>
+                    </div>
+                  }
+                />
+              </div>
             </ScrollReveal>
           ))}
         </div>
